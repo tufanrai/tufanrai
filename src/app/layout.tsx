@@ -27,6 +27,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <span className="fixed right-5 top-6 z-99999 rotate-[30deg] bg-black border-t-1 border-b-1">
+          Development phase
+        </span>
         {children}
       </body>
     </html>
