@@ -1,7 +1,12 @@
+import Aboutme from "@/src/components/aboutme/Aboutme";
 import React from "react";
 
 const page = () => {
-  return <div>This page is in progress please wait...</div>;
+  return (
+    <div>
+      <Aboutme />
+    </div>
+  );
 };
 
 export default page;

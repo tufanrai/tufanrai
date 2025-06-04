@@ -3,6 +3,7 @@ import React from "react";
 import Profile from "@/src/public/Coder.jpg";
 import Link from "next/link";
 import { FaInstagram, FaFacebook, FaGithub } from "react-icons/fa";
+import RotatingText from "@/reactBits/RotatingText/RotatingText";
 
 const Hero = () => {
   return (
@@ -46,9 +47,16 @@ const Hero = () => {
         </div>
       </div>
       <div className="w-120 px-5 py-2 h-100">
-        <h1 className="font-semibold text-3xl mb-4">Hello, Tufan Here!</h1>
+        <h1 className="font-semibold text-2xl mb-4">
+          Hello,{" "}
+          <RotatingText
+            texts={["Tufan Rai here!", "MERN developer here!"]}
+            rotationInterval={2000}
+            mainClassName="bg-blue-500 rounded-lg inline-block w-80 px-5 py-1"
+          />{" "}
+        </h1>
         <h4 className="font-light text-md leading-5 text-slate-300 mb-4">
-          I'm a <b>MERN stack web developer</b>carrying ample amount of
+          I'm a <b>MERN stack web developer</b> carrying ample amount of
           experience with mongoDb, expressjs and nodejs. For front end I carry
           experience in Nextjs. I satisfy my clients by creating modular,
           responsive and modern web sites for their works.
